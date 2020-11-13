@@ -8,6 +8,7 @@
 
 body {
     box-sizing: border-box;
+    background-color: hsl(210, 46%, 95%);
 }
 
 html {
@@ -21,7 +22,7 @@ html {
     padding: 4.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 290px);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
         "Daniel Daniel Jonathan Kira"
         "Jeanette Patrick Patrick Kira";
@@ -59,7 +60,7 @@ html {
 .card--jonathan {
     grid-area: Jonathan;
     background-color: hsl(217, 19%, 35%);
-    color:hsl(210, 46%, 95%);
+    color: hsl(210, 46%, 95%);
 }
 
 .card--jeanette {
@@ -134,19 +135,19 @@ html {
     html {
         font-size: 58%;
     }
-    
+
     .container {
         padding: 3.2rem;
         max-width: 900px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        
+
         grid-template-areas:
-        "Daniel Daniel Jonathan"
-        "Jeanette Patrick Patrick"
-        "Kira Kira Kira";
+            "Daniel Daniel Jonathan"
+            "Jeanette Patrick Patrick"
+            "Kira Kira Kira";
     }
-    
+
 }
 
 @media (max-width: 742px) {
@@ -154,8 +155,8 @@ html {
         font-size: 60%;
     }
 
-    
-    
+
+
     .container {
         padding: 2rem;
         grid-template-columns: 1fr;
@@ -163,15 +164,15 @@ html {
         margin: 0 auto;
         max-width: 400px;
         grid-template-areas:
-        "Daniel" 
-        "Daniel "
-        "Jonathan"
-        "Jeanette" 
-        "Patrick "
-        "Patrick"
-        "Kira" 
-        "Kira"
-        "Kira";
+            "Daniel"
+            "Daniel "
+            "Jonathan"
+            "Jeanette"
+            "Patrick "
+            "Patrick"
+            "Kira"
+            "Kira"
+            "Kira";
     }
 
 }
